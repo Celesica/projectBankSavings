@@ -20,6 +20,8 @@ public class Client {
 				bank.setBalance((double) data.get(x)[5]);
 			}
 		}
+		
+		
 	}
 	
 	static boolean isExist(int accountNo) {
