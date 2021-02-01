@@ -4,8 +4,8 @@ import java.util.*;
 
 public class SavingsAccount extends BankAccount {
 	
-	private int accountNo;
-	private double balance;
+	private int accountNo = 0;
+	private double balance = 0;
 	private double interestRate = 0.05;
 	
 	SavingsAccount() {
@@ -16,7 +16,6 @@ public class SavingsAccount extends BankAccount {
 		super(accountName, address, birthday, contactNumber);
 		this.accountNo = accountNo;
 		this.balance = balance;
-		this.interestRate = interestRate;
 	}
 	
 //
