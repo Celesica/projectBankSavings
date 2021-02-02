@@ -4,7 +4,7 @@ import java.util.*;
 
 public class BankAccount {
 	
-	private String accountName, address, birthday, contactNumber;
+	private String accountName = null, address = null, birthday = null, contactNumber = null;
 	
 	BankAccount() {
 		
@@ -57,8 +57,9 @@ public class BankAccount {
 //	End of Setter and Getter
 //		
 	
-	public Object getClientDetails(int accountNo) {
-		Object[] ClientDetails = { accountName, address, birthday, contactNumber };
-		return ClientDetails;
+	public void getClientDetails() {
+		System.out.println(String.format("Name: %s\tAddress: %s\tBirthday: %s\tContact No.:%s", accountName, address, birthday, contactNumber));
+//		Object[] ClientDetails = { accountName, address, birthday, contactNumber };
+//		return ClientDetails;
 	}
 }
